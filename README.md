@@ -68,6 +68,12 @@ Use the code from the mega prelab to draw a timing diagram of the expected behav
 
 
 ## Documentation
+
+I referenced the following manuals to answer the mega prelab questions:
+* General - MSP430x2xx Family Users Guide
+* Nokia 1202 LCD Boosterpack
+* STE2007
+
 I worked with the following cadets by discussing the lab 3 mega prelab questions. We worked through each problem by helping each other find the necessary information to answer the questions (ie, pointing out which manual to look at, etc). 
 
 List of cadets I worked with:
