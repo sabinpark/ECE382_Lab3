@@ -28,10 +28,10 @@ mov.b	#LCD1202_RESET_PIN, & D
 ```
 | Mystery Label | Register|
 |:-: |:-: |
-| A|  |
-| B |  |
-| C |  |
-| D |  |
+| A| P1DIR |
+| B | P1OUT |
+| C | P2DIR |
+| D | P2OUT |
 
 #### SPI subsystem of the MSP430
 
@@ -43,12 +43,12 @@ mov.b	#LCD1202_RESET_PIN, & D
 
 | ID | Bit | Function as set in the code |
 |:-:|:-:|:-:|
-| UCCKPH | | |
-| UCMSB | | |
-| UCMST | | |
-| UCSYNCH| | |
-| UCSSEL_2|  | |
-| UCSWRST| | |
+| UCCKPH | 7 | clock phase select |
+| UCMSB | 5 | MSB first selesct; controls the direction of the receive and transmit shift register |
+| UCMST | 3 | master mode select |
+| UCSYNCH| 0 | synchronous mode enable |
+| UCSSEL_2| 7-6 | USCI clock source select |
+| UCSWRST| 0 | software reset enable |
 
 #### Communicate to the Nokia1202 display
 Use the code from the mega prelab to draw a timing diagram of the expected behavior of LCD1202_CS_PIN, LCD1202_SCLK_PIN, LCD1202_MOSI_PINs from the begining of this subroutine to the end.
@@ -67,3 +67,19 @@ Use the code from the mega prelab to draw a timing diagram of the expected behav
 |#STE2007_DISPLAYON | | |
 
 
+## Documentation
+I worked with the following cadets by discussing the lab 3 mega prelab questions. We worked through each problem by helping each other find the necessary information to answer the questions (ie, pointing out which manual to look at, etc). 
+
+List of cadets I worked with:
+* C2C Ruprecht
+* C2C Thompson
+* C2C Bolinger
+* C2C Jonas
+* C2C Cabusora
+* C2C Bodin
+* C2C Wooden
+* C2C Bapty
+* C2C Lewandowsky
+* C2C Kiernan
+* C2C Terragnoli
+* C2C Her
