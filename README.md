@@ -62,7 +62,7 @@ Use the code from the mega prelab to draw a timing diagram of the expected behav
 #### Configure the Nokia1202 display
 *Referenced the STE2007 datasheet:* http://ece382.com/datasheets/ste2007.pdf (pgs 41-51)
 
-| Symbolic Constant | Hex | Function | Page |
+| Symbolic Constant | Hex | Function |
 | :-: | :-: | :-: | :-: |
 |#STE2007_RESET| E2 | internal reset; command identifier |
 |#STE2007_DISPLAYALLPOINTSOFF| A4 | normal display mode; LCD display |
