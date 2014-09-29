@@ -37,7 +37,7 @@ ECE382_Lab3
 
 #### SPI subsystem of the MSP430
 
-*Referenced the MSP430x2xx Family Users Guide:* http://ece382.com/datasheets/msp430_msp430x2xx_family_users_guide.pdf (pgs 445-)
+*Referenced the MSP430x2xx Family Users Guide:* http://ece382.com/datasheets/msp430_msp430x2xx_family_users_guide.pdf (pg 445)
 
 ```
 	bis.b	#UCCKPH|UCMSB|UCMST|UCSYNC, &UCB0CTL0
