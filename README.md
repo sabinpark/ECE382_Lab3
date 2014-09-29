@@ -14,10 +14,10 @@ ECE382_Lab3
 | MOSI| 15 | Output | 1 | 0 | 1 |   
 | SCLK | 7 | Output | 1 | 0 | 1 |   
 | VCC | 1 | Power | - | - | - |  
-| S1 | 9 | Input | 0 | 1 | 1 | 
-| S2 | 10 | Input | 0 | 1 | 1 | 
-| S3 | 11 | Input | 0 | 1 | 1 | 
-| S4 | 12 | Input | 0 | 1 | 1 | 
+| S1 | 9 | Input | 0 | 0 | 1 | 
+| S2 | 10 | Input | 0 | 0 | 1 | 
+| S3 | 11 | Input | 0 | 0 | 1 | 
+| S4 | 12 | Input | 0 | 0 | 1 | 
 
 #### Configure the MSP430
 ```
