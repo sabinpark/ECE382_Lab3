@@ -8,16 +8,16 @@ ECE382_Lab3
 
 | Name | Pin # | Type | PxDIR| PxREN | PxOUT |
 |:-: | :-: | :-: | :-: | :-: | :-: |
-|GND | | | | |  |
-| RST |   |   |   |   |   |
-| P1.4 |   |   |   |   |   |   
-| MOSI|  |   |   |   |   |   
-| SCLK |   |   |   |   |   |   
-| VCC |   |   |   |   |   |  
-| S1 |   |   |   |   |   | 
-| S2 |   |   |   |   |   | 
-| S3 |   |   |   |   |   | 
-| S4 || | | | | 
+|GND | 20 | Power | - | - | -  |
+| RST | 8 | Output | 1 | 0 | 1 |
+| P1.4 | 6 | Output | 1 | 0 | 1 |   
+| MOSI| 15 | Output | 1 | 0 | 1 |   
+| SCLK | 7 | Output | 1 | 0 | 1 |   
+| VCC | 1 | Power | - | - | - |  
+| S1 | 9 | Input | 0 | 1 | 1 | 
+| S2 | 10 | Input | 0 | 1 | 1 | 
+| S3 | 11 | Input | 0 | 1 | 1 | 
+| S4 | 12 | Input | 0 | 1 | 1 | 
 
 #### Configure the MSP430
 ```
