@@ -1,8 +1,6 @@
 ECE382_Lab3
 ===========
 
-## Purpose
-
 ## Mega Prelab
 #### Nokia1202  LCD BoosterPack v4-5
 *Referenced the Nokia 1202 LCD Boosterpack:* http://ece382.com/datasheets/Nokia_1202_LCD_BoosterPack_v4-5.pdf
