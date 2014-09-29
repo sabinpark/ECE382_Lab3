@@ -89,3 +89,4 @@ List of cadets I worked with:
 * C2C Kiernan
 * C2C Terragnoli
 * C2C Her
+* C2C Borusas
