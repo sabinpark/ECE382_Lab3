@@ -60,15 +60,16 @@ Use the code from the mega prelab to draw a timing diagram of the expected behav
 [INSERT TIMING DIAGRAM)
 
 #### Configure the Nokia1202 display
+*Referenced the STE2007 datasheet:* http://ece382.com/datasheets/ste2007.pdf (pgs 41-51)
 
-| Symbolic Constant | Hex | Function |
-| :-: | :-: | :-: |
-|#STE2007_RESET| E2 | command identifier |
-|#STE2007_DISPLAYALLPOINTSOFF| A4 | normal display mode|
-|#STE2007_POWERCONTROL| - | sets the on-chip power supply circuit operating mode | 
+| Symbolic Constant | Hex | Function | Page |
+| :-: | :-: | :-: | :-: |
+|#STE2007_RESET| E2 | internal reset; command identifier |
+|#STE2007_DISPLAYALLPOINTSOFF| A4 | normal display mode; LCD display |
+|#STE2007_POWERCONTROL| - | sets the on–chip power supply circuit operating mode |
 |#STE2007_POWERCTRL_ALL_ON | 2F | booster: on, voltage regulation: on, voltage follower: on |
-|#STE2007_DISPLAYNORMAL | A6 | normal: |
-|#STE2007_DISPLAYON | AF | display on |
+|#STE2007_DISPLAYNORMAL | A6 | LCD display; normal:DDRAM data "H"=LCD ON voltage |
+|#STE2007_DISPLAYON | AF | LCD display on |
 
 
 ## Documentation
