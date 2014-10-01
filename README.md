@@ -44,7 +44,7 @@ ECE382_Lab3
 	bic.b	#UCSWRST, &UCB0CTL1
 ```
 
-| ID | Bit | Function as set in the code |
+| ID | Bit......... | Function as set in the code |
 |:-:|:-:|:-:|
 | UCCKPH | 7 | clock phase select; 0: data is changed on the first UCLK edge and captured on the following edge, 1: opposite of 0 |
 | UCMSB | 5 | MSB first select; controls the direction of the receive and transmit shift register; 0 (LSB first), 1 (MSB first) |
