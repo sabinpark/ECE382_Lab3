@@ -4,16 +4,17 @@ ECE382_Lab3
 ## Mega Prelab
 #### Nokia1202  LCD BoosterPack v4-5
 *Referenced the Nokia 1202 LCD Boosterpack:* http://ece382.com/datasheets/Nokia_1202_LCD_BoosterPack_v4-5.pdf
+
 *For PxDIR, PxREN, and PxOUT; from the MSP430x2xx Family Users Guide:* http://ece382.com/datasheets/msp430_msp430x2xx_family_users_guide.pdf (pgs 328-329)
 
 | Name | Pin # | Type | PxDIR| PxREN | PxOUT |
 |:-: | :-: | :-: | :-: | :-: | :-: |
-|GND | 20 | Power | - | - | -  |
+|GND | 20 | Power | X | X | X  |
 | RST | 8 | Output | 1 | 0 | X |
 | P1.4 | 6 | Output | 1 | 0 | X |   
 | MOSI| 15 | Output | 1 | 0 | X |   
 | SCLK | 7 | Output | 1 | 0 | X |   
-| VCC | 1 | Power | - | - | - |  
+| VCC | 1 | Power | X | X | X |  
 | S1 | 9 | Input | 0 | 0 | info | 
 | S2 | 10 | Input | 0 | 0 | info | 
 | S3 | 11 | Input | 0 | 0 | info | 
