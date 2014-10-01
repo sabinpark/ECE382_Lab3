@@ -73,6 +73,7 @@ Use the code from the mega prelab to draw a timing diagram of the expected behav
 
 ## Documentation
 
+#### Mega Prelab
 I referenced the following manuals to answer the mega prelab questions:
 * General - MSP430x2xx Family Users Guide
 * Nokia 1202 LCD Boosterpack
@@ -95,3 +96,4 @@ List of cadets I worked with:
 * C2C Her
 * C2C Borusas
 
+Dr. Coulston referred me to the lab3.asm file and showed me that I should separate the bits for the power control set (the last three bits for POWERCTRL_ALL_ON)
