@@ -55,7 +55,7 @@ ECE382_Lab3
 #### Communicate to the Nokia1202 display
 Use the code from the mega prelab to draw a timing diagram of the expected behavior of LCD1202_CS_PIN, LCD1202_SCLK_PIN, LCD1202_MOSI_PINs from the begining of this subroutine to the end.
 
-[insert timing diagram here]
+![alt test](https://github.com/sabinpark/ECE382_Lab3/blob/master/images/timing_diagram.jpg "Mega Pre Lab Timing Diagram")
 
 #### Configure the Nokia1202 display
 *Referenced the STE2007 datasheet:* http://ece382.com/datasheets/ste2007.pdf (pgs 41-51)
