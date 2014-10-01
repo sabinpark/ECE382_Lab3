@@ -46,9 +46,9 @@ ECE382_Lab3
 
 | ID | Bit  | Function as set in the code |
 |:-:|:-:|:-:|
-| UCCKPH | 7 | clock phase select; 0: data is changed on the first UCLK edge and captured on the following edge, 1: opposite of 0 |
-| UCMSB | 5 | MSB first select; controls the direction of the receive and transmit shift register; 0 (LSB first), 1 (MSB first) |
-| UCMST | 3 | master mode select: 0 (slave), 1 (master) |
+| UCCKPH | 7 | Data is changed on the first UCLK edge and captured on the following edge |
+| UCMSB | 5 | LSB set first |
+| UCMST | 3 | slave mode |
 | UCSYNCH| 0 | synchronous mode enable; 0 (asynchronous), 1 (synchronous) |
 | UCSSEL_2| 7-6 | Using the SMCLK |
 | UCSWRST| 0 | software reset enable; 0 (disabled, USCI reset released for operation), 1 (enabled, USCI logic held in reset state) |
