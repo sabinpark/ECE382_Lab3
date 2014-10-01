@@ -46,12 +46,12 @@ ECE382_Lab3
 
 | ID | Bit  | Function as set in the code |
 |:-:|:-:|:-:|
-| UCCKPH | 7 | Data is changed on the first UCLK edge and captured on the following edge |
-| UCMSB | 5 | LSB set first |
-| UCMST | 3 | slave mode |
-| UCSYNCH| 0 | synchronous mode enable; 0 (asynchronous), 1 (synchronous) |
-| UCSSEL_2| 7-6 | Using the SMCLK |
-| UCSWRST| 0 | software reset enable; 0 (disabled, USCI reset released for operation), 1 (enabled, USCI logic held in reset state) |
+| UCCKPH | 7 | Data is captured on the first UCLK edge and changed on the following edge |
+| UCMSB | 5 | MSB set first |
+| UCMST | 3 | Master mode |
+| UCSYNCH | 0 | Synchronous mode enabled |
+| UCSSEL_2 | 7-6 | Using the SMCLK |
+| UCSWRST| 0 | software reset disabled; USCI reset released for operation |
 
 #### Communicate to the Nokia1202 display
 Use the code from the mega prelab to draw a timing diagram of the expected behavior of LCD1202_CS_PIN, LCD1202_SCLK_PIN, LCD1202_MOSI_PINs from the begining of this subroutine to the end.
