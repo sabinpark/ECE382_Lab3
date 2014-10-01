@@ -51,7 +51,7 @@ ECE382_Lab3
 | UCMST | 3 | Master mode |
 | UCSYNCH | 0 | Synchronous mode enabled |
 | UCSSEL_2 | 7-6 | Using the SMCLK |
-| UCSWRST| 0 | software reset disabled; USCI reset released for operation |
+| UCSWRST| 0 | Software reset disabled; USCI reset released for operation |
 
 #### Communicate to the Nokia1202 display
 Use the code from the mega prelab to draw a timing diagram of the expected behavior of LCD1202_CS_PIN, LCD1202_SCLK_PIN, LCD1202_MOSI_PINs from the begining of this subroutine to the end.
