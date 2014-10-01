@@ -49,13 +49,13 @@ ECE382_Lab3
 | UCMSB | 5 | MSB first select; controls the direction of the receive and transmit shift register; 0 (LSB first), 1 (MSB first) |
 | UCMST | 3 | master mode select: 0 (slave), 1 (master) |
 | UCSYNCH| 0 | synchronous mode enable; 0 (asynchronous), 1 (synchronous) |
-| UCSSEL_2| 7-6 | USCI clock source select; these bits select the BRCLK source clock in master mode; UCxCLK is always used in slave mode; 00 (NA), 01 (ACLK), 10 (SMCLK), 11 (SMCLK) |
+| UCSSEL_2| 7-6 | Using the SMCLK |
 | UCSWRST| 0 | software reset enable; 0 (disabled, USCI reset released for operation), 1 (enabled, USCI logic held in reset state) |
 
 #### Communicate to the Nokia1202 display
 Use the code from the mega prelab to draw a timing diagram of the expected behavior of LCD1202_CS_PIN, LCD1202_SCLK_PIN, LCD1202_MOSI_PINs from the begining of this subroutine to the end.
 
-[INSERT TIMING DIAGRAM)
+[insert timing diagram here]
 
 #### Configure the Nokia1202 display
 *Referenced the STE2007 datasheet:* http://ece382.com/datasheets/ste2007.pdf (pgs 41-51)
