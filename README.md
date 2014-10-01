@@ -46,7 +46,7 @@ ECE382_Lab3
 | ID | Bit | Function as set in the code |
 |:-:|:-:|:-:|
 | UCCKPH | 7 | clock phase select; 0: data is changed on the first UCLK edge and captured on the following edge, 1: opposite of 0 |
-| UCMSB | 5 | MSB first selesct; controls the direction of the receive and transmit shift register; 0 (LSB first), 1 (MSB first) |
+| UCMSB | 5 | MSB first select; controls the direction of the receive and transmit shift register; 0 (LSB first), 1 (MSB first) |
 | UCMST | 3 | master mode select: 0 (slave), 1 (master) |
 | UCSYNCH| 0 | synchronous mode enable; 0 (asynchronous), 1 (synchronous) |
 | UCSSEL_2| 7-6  | USCI clock source select; these bits select the BRCLK source clock in master mode; UCxCLK is always used in slave mode; 00 (NA), 01 (ACLK), 10 (SMCLK), 11 (SMCLK) |
@@ -93,3 +93,5 @@ List of cadets I worked with:
 * C2C Terragnoli
 * C2C Her
 * C2C Borusas
+
+C2C Terragnoli advised me on the first table that the PxOUT should not have any discrete values because they will simply return whatever the output is at the time and that for pins 9 to 12, the output can simply be labeled as information.
