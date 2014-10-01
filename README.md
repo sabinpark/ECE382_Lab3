@@ -10,15 +10,15 @@ ECE382_Lab3
 | Name | Pin # | Type | PxDIR| PxREN | PxOUT |
 |:-: | :-: | :-: | :-: | :-: | :-: |
 |GND | 20 | Power | X | X | X  |
-| RST | 8 | Output | 1 | 0 | X |
-| P1.4 | 6 | Output | 1 | 0 | X |   
-| MOSI| 15 | Output | 1 | 0 | X |   
-| SCLK | 7 | Output | 1 | 0 | X |   
+| RST | 8 | Output | 1 | 0 | 0 |
+| P1.4 | 6 | Output | 1 | 0 | 0 |   
+| MOSI| 15 | Output | 1 | 0 | 0 |   
+| SCLK | 7 | Output | 1 | 0 | 0 |   
 | VCC | 1 | Power | X | X | X |  
-| S1 | 9 | Input | 0 | 0 | info | 
-| S2 | 10 | Input | 0 | 0 | info | 
-| S3 | 11 | Input | 0 | 0 | info | 
-| S4 | 12 | Input | 0 | 0 | info | 
+| S1 | 9 | Input | 0 | 0 | X | 
+| S2 | 10 | Input | 0 | 0 | X | 
+| S3 | 11 | Input | 0 | 0 | X | 
+| S4 | 12 | Input | 0 | 0 | X | 
 
 #### Configure the MSP430
 ```
@@ -65,8 +65,8 @@ Use the code from the mega prelab to draw a timing diagram of the expected behav
 | :-: | :-: | :-: | :-: |
 |#STE2007_RESET| E2 | internal reset; command identifier |
 |#STE2007_DISPLAYALLPOINTSOFF| A4 | normal display mode; LCD display |
-|#STE2007_POWERCONTROL| - | sets the on–chip power supply circuit operating mode |
-|#STE2007_POWERCTRL_ALL_ON | 2F | booster: on, voltage regulation: on, voltage follower: on |
+|#STE2007_POWERCONTROL| 28 | sets the on–chip power supply circuit operating mode |
+|#STE2007_POWERCTRL_ALL_ON | 07 | booster: on, voltage regulation: on, voltage follower: on |
 |#STE2007_DISPLAYNORMAL | A6 | LCD display; normal:DDRAM data "H"=LCD ON voltage |
 |#STE2007_DISPLAYON | AF | LCD display on |
 
@@ -95,4 +95,3 @@ List of cadets I worked with:
 * C2C Her
 * C2C Borusas
 
-C2C Terragnoli advised me on the first table that the PxOUT should not have any discrete values because they will simply return whatever the output is at the time and that for pins 9 to 12, the output can simply be labeled as information.
