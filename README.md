@@ -49,7 +49,7 @@ ECE382_Lab3
 | UCMSB | 5 | MSB first select; controls the direction of the receive and transmit shift register; 0 (LSB first), 1 (MSB first) |
 | UCMST | 3 | master mode select: 0 (slave), 1 (master) |
 | UCSYNCH| 0 | synchronous mode enable; 0 (asynchronous), 1 (synchronous) |
-| UCSSEL_2| 7-6  | USCI clock source select; these bits select the BRCLK source clock in master mode; UCxCLK is always used in slave mode; 00 (NA), 01 (ACLK), 10 (SMCLK), 11 (SMCLK) |
+| UCSSEL_2| 7-6 | USCI clock source select; these bits select the BRCLK source clock in master mode; UCxCLK is always used in slave mode; 00 (NA), 01 (ACLK), 10 (SMCLK), 11 (SMCLK) |
 | UCSWRST| 0 | software reset enable; 0 (disabled, USCI reset released for operation), 1 (enabled, USCI logic held in reset state) |
 
 #### Communicate to the Nokia1202 display
