@@ -9,15 +9,15 @@ ECE382_Lab3
 | Name | Pin # | Type | PxDIR| PxREN | PxOUT |
 |:-: | :-: | :-: | :-: | :-: | :-: |
 |GND | 20 | Power | - | - | -  |
-| RST | 8 | Output | 1 | 0 | 1 |
-| P1.4 | 6 | Output | 1 | 0 | 1 |   
-| MOSI| 15 | Output | 1 | 0 | 1 |   
-| SCLK | 7 | Output | 1 | 0 | 1 |   
+| RST | 8 | Output | 1 | 0 | X |
+| P1.4 | 6 | Output | 1 | 0 | X |   
+| MOSI| 15 | Output | 1 | 0 | X |   
+| SCLK | 7 | Output | 1 | 0 | X |   
 | VCC | 1 | Power | - | - | - |  
-| S1 | 9 | Input | 0 | 0 | 1 | 
-| S2 | 10 | Input | 0 | 0 | 1 | 
-| S3 | 11 | Input | 0 | 0 | 1 | 
-| S4 | 12 | Input | 0 | 0 | 1 | 
+| S1 | 9 | Input | 0 | 0 | info | 
+| S2 | 10 | Input | 0 | 0 | info | 
+| S3 | 11 | Input | 0 | 0 | info | 
+| S4 | 12 | Input | 0 | 0 | info | 
 
 #### Configure the MSP430
 ```
@@ -49,7 +49,7 @@ ECE382_Lab3
 | UCMSB | 5 | MSB first selesct; controls the direction of the receive and transmit shift register; 0 (LSB first), 1 (MSB first) |
 | UCMST | 3 | master mode select: 0 (slave), 1 (master) |
 | UCSYNCH| 0 | synchronous mode enable; 0 (asynchronous), 1 (synchronous) |
-| UCSSEL_2| 7 to 6  | USCI clock source select; these bits select the BRCLK source clock in master mode; UCxCLK is always used in slave mode; 00 (NA), 01 (ACLK), 10 (SMCLK), 11 (SMCLK) |
+| UCSSEL_2| 7-6  | USCI clock source select; these bits select the BRCLK source clock in master mode; UCxCLK is always used in slave mode; 00 (NA), 01 (ACLK), 10 (SMCLK), 11 (SMCLK) |
 | UCSWRST| 0 | software reset enable; 0 (disabled, USCI reset released for operation), 1 (enabled, USCI logic held in reset state) |
 
 #### Communicate to the Nokia1202 display
