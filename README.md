@@ -71,6 +71,15 @@ Use the code from the mega prelab to draw a timing diagram of the expected behav
 |#STE2007_DISPLAYON | AF | LCD display on |
 
 
+## Lab
+
+| Line | R12 | R13 | Purpose |
+|:-:|:-:|:-:|:-:|
+| 66 |  |  |  |
+| 111 |  |  |  |
+| 115 |  |  |  |
+| 119 |  |  |  |
+
 ## Documentation
 
 #### Mega Prelab
@@ -97,3 +106,6 @@ List of cadets I worked with:
 * C2C Borusas
 
 Dr. Coulston referred me to the lab3.asm file and showed me that I should separate the bits for the power control set (the last three bits for POWERCTRL_ALL_ON)
+
+#### Lab
+None
