@@ -9,7 +9,7 @@ ECE382_Lab3
 
 | Name | Pin # | Type | PxDIR| PxREN | PxOUT |
 |:-: | :-: | :-: | :-: | :-: | :-: |
-|GND | 20 | Power | X | X | X  |
+| GND | 20 | Power | X | X | X  |
 | RST | 8 | Output | 1 | 0 | 0 |
 | P1.4 | 6 | Output | 1 | 0 | 0 |   
 | MOSI| 15 | Output | 1 | 0 | 0 |   
@@ -75,10 +75,20 @@ Use the code from the mega prelab to draw a timing diagram of the expected behav
 
 | Line | R12 | R13 | Purpose |
 |:-:|:-:|:-:|:-:|
-| 66 |  |  |  |
-| 111 |  |  |  |
-| 115 |  |  |  |
-| 119 |  |  |  |
+| 66 | NOKIA_DATA | 0xE7 (1110 0111) | stores the 8 pixel bar into R12; stores the 2 pixel hole in R13 |
+| 276 | NOKIA_CMD | 0xB0 (1011 0000) | sets the rows to 8 pixels down |
+| 288 | NOKIA_CMD | 0x10 (0001 0000) | ---- |
+| 294 | NOKIA_CMD | mask upper bits (0000 1111) | resets the row |
+
+| Line | Command/Data | 8-bit Packet |
+|:-:|:-:|:-:|
+| 66 | data | E7 |
+| 276 | command | B6 |
+| 288 | command | 10 |
+| 294 | command | 06 |
+
+RESET
+-6.964281 us - (-7.766734 us)
 
 ## Documentation
 
