@@ -187,7 +187,7 @@ After moving the box up (decrementing), if the new Y value was greater than or e
 Using the required functionality code, I created a subroutine called *drawBox*. As the name implies, *drawBox* draws a box using 8 iterations of drawing 1 pixel wide bars.
 
 ### Debugging
-Initially, I had trouble with setting the position of the bar. I did not realize that R12 and R13 were used for multiple purposes and ended up spending quite some time trying to set the position of my image in various places. Aside from that initial trouble, I ended up completing the lab without too much trouble.
+Initially, I had trouble with setting the position of the bar. I did not realize that R12 and R13 were used for multiple purposes and ended up spending quite some time trying to set the position of my image in various places. Aside from that initial confusion, I ended up completing the lab without too much trouble.
 
 ## Documentation
 
