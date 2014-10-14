@@ -145,6 +145,13 @@ draw:
 	jnz		draw				; keep drawing until we finish all 8 bars
 ```
 
+I set the initial position of the box so that it would be roughly center of the LCD. The initial positions were declared as constants at the beginning of the code.
+```
+; center positions of the LCD (for an 8x8 pixel box)
+X_CENTER:	.equ	0x2c	; decimal of 44
+Y_CENTER:	.equ	0x04
+```
+
 #### A Functionality
 To get A functionality, I had to revise the code to make sure the program knew which bit of P2IN was being set. I made R9 the temporary holder for the P2IN bit. From there, I used a switch-case structure to check each switch. Depending on which switch was pressed (and released), the program moved up, down, left, or right. 
 
