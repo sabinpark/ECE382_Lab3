@@ -85,10 +85,10 @@ Use the code from the mega prelab to draw a timing diagram of the expected behav
 
 | Line | Command/Data | 8-bit Packet |
 |:-:|:-:|:-:|
-| 66 | data | E7 |
-| 276 | command | B5 |
-| 288 | command | 10 |
-| 294 | command | 05 |
+| 66 | data | 1110 0111 |
+| 276 | command | 1011 0101 |
+| 288 | command | 0001 0000 |
+| 294 | command | 0000 0101 |
 
 ##### Waveforms
 *Line 66*
