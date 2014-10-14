@@ -92,10 +92,12 @@ Use the code from the mega prelab to draw a timing diagram of the expected behav
 
 ##### Waveforms
 *Line 66*
+
 This part of the waveform shows the 8 pixel high pattern being set into R13. This matches the pattern of the bar in that 3 pixels are set, then 2 are clear, and then 3 more are set. *NOTE:* E7 = 11100111
 ![alt test](https://github.com/sabinpark/ECE382_Lab3/blob/master/images/Waveform_1.jpg "Waveform 1")
 
 *Line 276*
+
 This part is where the program sets the bar's row. In this particular case, the row is set to 5. Consequently, there are 5 bars in the LCD screen.
 ![alt test](https://github.com/sabinpark/ECE382_Lab3/blob/master/images/Waveform_2.jpg "Waveform 2")
 
