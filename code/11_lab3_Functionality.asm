@@ -72,13 +72,6 @@ main:
 	mov	#Y_CENTER, R10					; centers the Y position
 	mov	#X_CENTER, R11					; centers the X position
 
-	mov	R10, R12						; copies the Y position into R12
-	mov	R11, R13						; copies the X position into R13
-
-	call	#setAddress					; set the address of the box position
-
-	mov 	#BOX_WIDTH, R8				; set the width of the box
-
 	call	#drawBox					; draw the initial box at the center of the screen
 
 ;-------------------------------------------------------------------------------
@@ -163,7 +156,7 @@ released:
 
 ;-------------------------------------------------------------------------------
 ;	Name:		drawBox
-;	Inputs:		none
+;	Inputs:		R12 (row), R13 (column)
 ;	Outputs:	none
 ;	Purpose:	Draws an 8x8 pixel box
 ;
@@ -171,15 +164,27 @@ released:
 ;				R13 - column address
 ;-------------------------------------------------------------------------------
 drawBox:
+	push	R12
+	push	R13
+
+	mov		R10, R12						; copies the Y position into R12
+	mov		R11, R13						; copies the X position into R13
+
+	call	#setAddress					; set the address of the box position
+
+	mov 	#BOX_WIDTH, R8				; set the width of the box
+draw:
 	mov		#NOKIA_DATA, R12	; stores data into R12
 	mov		#0xFF, R13			; draw an 8 pixel high solid bar (1x8 pixels)
 
 	call	#writeNokiaByte		; draws the pixels
 
-	dec	R8						; decrement the counter
-	jnz	drawBox					; keep drawing until we finish all 8 bars
+	dec		R8						; decrement the counter
+	jnz		draw					; keep drawing until we finish all 8 bars
 
-	mov 	#BOX_WIDTH, R8		; reset the width of the box (reset counter)
+	pop		R13
+	pop		R12
+
 	ret
 
 ;-------------------------------------------------------------------------------
