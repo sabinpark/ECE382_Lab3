@@ -77,9 +77,9 @@ Use the code from the mega prelab to draw a timing diagram of the expected behav
 | Line | R12 | R13 | Purpose |
 |:-:|:-:|:-:|:-:|
 | 66 | NOKIA_DATA | 0xE7 (1110 0111) | sets the 8 pixel high pattern |
-| 276 | NOKIA_CMD | 0xB0 (1011 0000) | sets the rows |
+| 276 | NOKIA_CMD | 0xB5 (1011 0101) | sets the rows |
 | 288 | NOKIA_CMD | 0x10 (0001 0000) | sets the column address ("upper 3 bits") |
-| 294 | NOKIA_CMD | mask upper bits (0000 1111) | sets the column address ("lower 4 bits") |
+| 294 | NOKIA_CMD | mask upper bits (0000 0101) | sets the column address ("lower 4 bits") |
 
 #### SW3 Waveform Analysis
 
@@ -92,9 +92,11 @@ Use the code from the mega prelab to draw a timing diagram of the expected behav
 
 ##### Waveforms
 *Line 66*
+This part of the waveform shows the 8 pixel high pattern being set into R13. This matches the pattern of the bar in that 3 pixels are set, then 2 are clear, and then 3 more are set. *NOTE:* E7 = 11100111
 ![alt test](https://github.com/sabinpark/ECE382_Lab3/blob/master/images/Waveform_1.jpg "Waveform 1")
 
 *Line 276*
+This part is where the program sets the bar's row. In this particular case, the row is set to 5. Consequently, there are 5 bars in the LCD screen.
 ![alt test](https://github.com/sabinpark/ECE382_Lab3/blob/master/images/Waveform_2.jpg "Waveform 2")
 
 *Line 288*
@@ -102,7 +104,6 @@ Use the code from the mega prelab to draw a timing diagram of the expected behav
 
 *Line 294*
 ![alt test](https://github.com/sabinpark/ECE382_Lab3/blob/master/images/Waveform_4.jpg "Waveform 4")
-
 
 
 ##### Reset
@@ -180,6 +181,11 @@ setYMIN:
 ```
 
 After moving the box up (decrementing), if the new Y value was greater than or equal to 0, then the box would remain where it is at. Otherwise, it would mean the box is below the value of 0 (meaning that the box is above the screen), and set the box's Y value to 0. The same idea was used for DOWN, LEFT, and RIGHT. 
+
+Using the required functionality code, I created a subroutine called *drawBox*. As the name implies, *drawBox* draws a box using 8 iterations of drawing 1 pixel wide bars.
+
+### Debugging
+Initially, I had trouble with setting the position of the bar. I did not realize that R12 and R13 were used for multiple purposes and ended up spending quite some time trying to set the position of my image in various places. Aside from that initial trouble, I ended up completing the lab without too much trouble.
 
 ## Documentation
 
